@@ -30,7 +30,7 @@
 
 4. Suggested CodeEditor - PyCharm Community Edition  
 
----
+---  
 **Step 3: HTML Tree traversal**  
 
 > Commonly used types of objects:  
