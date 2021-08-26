@@ -43,7 +43,7 @@
 `title = soup.title`  
 
 *# Get all the paragraphs from page*  
-<code>paras = soup.find_all('p')    
+<code>paras = soup.find_all('p')  
 print(paras)  
 </code>  
 
@@ -67,7 +67,6 @@ print(anchor)
 *# get first element after p tag  
 <code>print(soup.find('p')['class'])</code>  
 
-
 *# find all the elements with class lead*  
 <code>print(soup.find_all("p", class_="lead"))</code>  
 
@@ -77,7 +76,7 @@ print(anchor)
 print(soup.get_text())  # print all the text in web page without any tags</code>  
 
 *# Comment as last object*  
-`markup = "<p><!-- this is a comment --></p>"`  
+`markup = "<p><!-- this is a comment --></p>"`
 <code>soup2 = BeautifulSoup(markup, features='html5lib')  
 print(type(soup2.p))  
 print(type(soup2.p.string))  
