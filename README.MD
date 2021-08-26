@@ -4,7 +4,7 @@
 > 2. Step-by-Step tutorial with code & it's use  
 > 3. No project, just tutorial. Actual implementation in coming days  
 > 4. May not run as there must be some conflicting codes
-> 5. Get full code with proper comments in the file [web-scrapping.py]()
+> 5. Get full code with proper comments in the file [web-scrapping.py](https://github.com/nitin30kumar/web-scrapping-using-python/blob/main/web-scrapping.py)
 
 # Modules used
 
