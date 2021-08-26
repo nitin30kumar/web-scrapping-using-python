@@ -113,7 +113,7 @@ for item in navbarSupportedContent.strings:
 
 
 *# All parents of selected item*  
-<code>for item in navbarSupportedContent.parents:  
+<code>for item in navbarSupportedContent.parents:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;print(item.name)  
 </code>  
 
