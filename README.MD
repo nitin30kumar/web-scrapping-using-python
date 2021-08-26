@@ -34,7 +34,7 @@
 from bs4 import BeautifulSoup  
 url = "https://nitsanon.epizy.com"  
 </code>  
----
+---  
 **Step 1: Get the HTML source code**  
 
 <code>content = requests.get(url)  
