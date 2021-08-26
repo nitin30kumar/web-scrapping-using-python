@@ -30,6 +30,24 @@
 
 4. Suggested CodeEditor - PyCharm Community Edition  
 
+<code>import requests  
+from bs4 import BeautifulSoup  
+url = "https://nitsanon.epizy.com"  
+</code>  
+---
+**Step 1: Get the HTML source code**  
+
+<code>content = requests.get(url)  
+htmlContent = content.content    
+print(htmlContent)   # just print the whole source code of webpage    
+</code>  
+---
+**Step 2: Parse the HTML code**  
+
+<code>soup = BeautifulSoup(htmlContent, 'html.parser')    
+print(soup.prettify())  # it'll print source code in well defined order with indendation    
+</code> 
+
 ---  
 **Step 3: HTML Tree traversal**  
 
