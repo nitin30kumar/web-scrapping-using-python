@@ -27,8 +27,8 @@
 1. pip install requests  
 2. pip install bs4  
 3. pip install html5lib
-<br />
-4. Suggested CodeEditor - PyCharm Community Edition
+
+4. Suggested CodeEditor - PyCharm Community Edition  
 
 <code>import requests  
 from bs4 import BeautifulSoup  
