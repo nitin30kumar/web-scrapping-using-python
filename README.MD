@@ -48,16 +48,16 @@ print(paras)
 </code>  
 
 *# Get all the anchors code from page*  
-<code>anchor = soup.find_all('a')  
-all_links = set()  
-print(anchor)  
+<code>anchor = soup.find_all('a')<br>
+all_links = set()<br>
+print(anchor)<br>
 </code>
 
 *# Get all the clickable links directly in console from page*  
-<code>for link in anchor:  
-&nbsp;&nbsp;&nbsp;if link.get('href') != '#':  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;link = "https://nitsanon.epizy.com" + link.get('href')  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all_links.add(link)  
+<code>for link in anchor:<br>
+&nbsp;&nbsp;&nbsp;if link.get('href') != '#':<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;link = "https://nitsanon.epizy.com" + link.get('href')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all_links.add(link)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(link)  
 </code>
 
