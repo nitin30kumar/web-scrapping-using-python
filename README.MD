@@ -55,10 +55,10 @@ print(anchor)
 
 *# Get all the clickable links directly in console from page*  
 <code>for link in anchor:  
-     &nbsp;&nbsp;&nbsp;if link.get('href') != '#':  
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;link = "https://nitsanon.epizy.com" + link.get('href')  
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all_links.add(link)  
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(link)  
+&nbsp;&nbsp;&nbsp;if link.get('href') != '#':  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;link = "https://nitsanon.epizy.com" + link.get('href')  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all_links.add(link)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(link)  
 </code>
 
 *# get first element in the HTML page*  
