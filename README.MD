@@ -71,11 +71,11 @@
 
 
 *# Get all the clickable links directly in console from page*  
-`<pre>for link in anchor:`  
+<pre>`for link in anchor:`  
     `if link.get('href') != '#':`  
         `link = "https://nitsanon.epizy.com" + link.get('href')`  
         `all_links.add(link)`  
-        `print(link)</pre>`  
+        `print(link)`</pre>  
 
 
 *# get first element in the HTML page*  
