@@ -30,23 +30,22 @@
 
 4. Suggested CodeEditor - PyCharm Community Edition  
 
-<code>import requests  
-from bs4 import BeautifulSoup  
-url = "https://nitsanon.epizy.com"  
-</code>  
+`import requests`  
+`from bs4 import BeautifulSoup`  
+`url = "https://nitsanon.epizy.com"`  
+  
 ---  
 **Step 1: Get the HTML source code**  
 
-<code>content = requests.get(url)  
-htmlContent = content.content    
-print(htmlContent)   # just print the whole source code of webpage    
-</code>  
+`content = requests.get(url)`  
+`htmlContent = content.content`  
+`print(htmlContent)   # just print the whole source code of webpage`  
+
 ---
 **Step 2: Parse the HTML code**  
 
-<code>soup = BeautifulSoup(htmlContent, 'html.parser')    
-print(soup.prettify())  # it'll print source code in well defined order with indendation    
-</code> 
+`soup = BeautifulSoup(htmlContent, 'html.parser')`  
+`print(soup.prettify())  # it'll print source code in well defined order with indendation`  
 
 ---  
 **Step 3: HTML Tree traversal**  
@@ -61,45 +60,45 @@ print(soup.prettify())  # it'll print source code in well defined order with ind
 `title = soup.title`  
 
 *# Get all the paragraphs from page*  
-<code>paras = soup.find_all('p')  
-print(paras)  
-</code>  
+`paras = soup.find_all('p')`  
+`print(paras)`  
+
 
 *# Get all the anchors code from page*  
-<code>anchor = soup.find_all('a')<br>
-all_links = set()<br>
-print(anchor)<br>
-</code>
+`anchor = soup.find_all('a')`  
+`all_links = set()`  
+`print(anchor)`  
+
 
 *# Get all the clickable links directly in console from page*  
-<code>for link in anchor:<br>
-&nbsp;&nbsp;&nbsp;if link.get('href') != '#':<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;link = "https://nitsanon.epizy.com" + link.get('href')<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all_links.add(link)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(link)  
-</code>
+`for link in anchor:`  
+`&nbsp;&nbsp;&nbsp;if link.get('href') != '#':`  
+`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;link = "https://nitsanon.epizy.com" + link.get('href')`  
+&`nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all_links.add(link)`  
+`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(link)`  
+
 
 *# get first element in the HTML page*  
-<code>print(soup.find('p'))</code>  
+`print(soup.find('p'))`
 
 *# get first element after p tag  
-<code>print(soup.find('p')['class'])</code>  
+`print(soup.find('p')['class'])`
 
 *# find all the elements with class lead*  
-<code>print(soup.find_all("p", class_="lead"))</code>  
+`print(soup.find_all("p", class_="lead"))`
 
 
 *# Get the text from the tags/soup*  
-<code>print(soup.find('p').get_text())  # print text inside the tag 'p'  
-print(soup.get_text())  # print all the text in web page without any tags</code>  
+`print(soup.find('p').get_text())  # print text inside the tag 'p'`  
+`print(soup.get_text())  # print all the text in web page without any tags`  
 
 *# Comment as last object*  
 `markup = "<p><!-- this is a comment --></p>"`
-<code>soup2 = BeautifulSoup(markup, features='html5lib')  
-print(type(soup2.p))  
-print(type(soup2.p.string))  
-exit()  
-</code>  
+`soup2 = BeautifulSoup(markup, features='html5lib')`  
+`print(type(soup2.p))`  
+`print(type(soup2.p.string))`  
+`exit()`  
+
 
 *# navigation bars extraction*  
 
