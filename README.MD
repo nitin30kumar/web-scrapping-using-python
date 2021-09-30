@@ -100,7 +100,7 @@
 `exit()`  
 
 
-*# navigation bars extraction*  
+# navigation bars extraction  
 
 <code>navbarSupportedContent = soup.find(id='navbarSupportedContent')  
 print(navbarSupportedContent) # navbar codes with parent  
@@ -111,7 +111,7 @@ for elem in navbarSupportedContent: # print title of navbar
      &nbsp;&nbsp;&nbsp;&nbsp;print(elem)  
 </code>  
 
-> *# difference between .children & .contents*  
+> # difference between .children & .contents  
 > 
 > -  .contents - A tag's children are available are available as a list  
 > -  .children - A tag's children are available are available as a generator. Not stored in memory. But can be get using for loop or next function  
