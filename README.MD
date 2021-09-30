@@ -72,10 +72,10 @@
 
 *# Get all the clickable links directly in console from page*  
 `for link in anchor:`  
-`&nbsp;&nbsp;&nbsp;if link.get('href') != '#':`  
-`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;link = "https://nitsanon.epizy.com" + link.get('href')`  
-&`nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all_links.add(link)`  
-`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(link)`  
+    `if link.get('href') != '#':`  
+        `link = "https://nitsanon.epizy.com" + link.get('href')`  
+        `all_links.add(link)`  
+        `print(link)`  
 
 
 *# get first element in the HTML page*  
