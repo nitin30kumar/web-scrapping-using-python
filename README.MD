@@ -93,7 +93,7 @@
 `print(soup.get_text())  # print all the text in web page without any tags`  
 
 *# Comment as last object*  
-`markup = "<p><!-- this is a comment --></p>"`
+`markup = "<p><!-- this is a comment --></p>"`  
 `soup2 = BeautifulSoup(markup, features='html5lib')`  
 `print(type(soup2.p))`  
 `print(type(soup2.p.string))`  
@@ -102,37 +102,37 @@
 
 # navigation bars extraction  
 
-<code>navbarSupportedContent = soup.find(id='navbarSupportedContent')  
-print(navbarSupportedContent) # navbar codes with parent  
-print(navbarSupportedContent.children) # navbar code iteratble  
-print(navbarSupportedContent.contents) # return codes of navbar  
+`navbarSupportedContent = soup.find(id='navbarSupportedContent')`  
+`print(navbarSupportedContent) # navbar codes with parent`  
+`print(navbarSupportedContent.children) # navbar code iteratble`  
+`print(navbarSupportedContent.contents) # return codes of navbar`  
 <br>  
-for elem in navbarSupportedContent: # print title of navbar  
-     &nbsp;&nbsp;&nbsp;&nbsp;print(elem)  
-</code>  
+`for elem in navbarSupportedContent: # print title of navbar`  
+     `&nbsp;&nbsp;&nbsp;&nbsp;print(elem)`  
 
-> # difference between .children & .contents  
+
+*# difference between .children & .contents*  
 > 
 > -  .contents - A tag's children are available are available as a list  
 > -  .children - A tag's children are available are available as a generator. Not stored in memory. But can be get using for loop or next function  
 
 *# Print title of navbars*  
 
-<code>for item in navbarSupportedContent.stripped_strings:  
-&nbsp;&nbsp;&nbsp;&nbsp;print(item)  
+`for item in navbarSupportedContent.stripped_strings:`  
+`&nbsp;&nbsp;&nbsp;&nbsp;print(item)`  
 
-for item in navbarSupportedContent.strings:  
-     print(item)  
-</code>  
+`for item in navbarSupportedContent.strings:`  
+     `print(item)`  
+
 
 *# Immediate parents of the item selected*  
-<code>print(navbarSupportedContent.parent)</code>  
+`print(navbarSupportedContent.parent)`  
 
 
 *# All parents of selected item*  
-<code>for item in navbarSupportedContent.parents:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;print(item.name)  
-</code>  
+`for item in navbarSupportedContent.parents:`  
+`&nbsp;&nbsp;&nbsp;&nbsp;print(item.name)`  
+
 
 *# Find next sibling*  
 `print(navbarSupportedContent.next_sibling)`  
@@ -143,9 +143,9 @@ for item in navbarSupportedContent.strings:
 
 
 *# Full list of code for the id*  
-<code>elem = soup.select('#loginModal')  
-print(elem)  
-</code>  
+`elem = soup.select('#loginModal')`  
+`print(elem)`  
+
 
 **Go through full [documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) of BeautifulSoup.**  
 
